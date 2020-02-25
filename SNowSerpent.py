@@ -34,7 +34,7 @@ def main():
     Parser = sp.SNowParser()
 
     #ErrorCode Array for parsing routine
-    ErrorCode = np.zeros(2)
+    ErrorCode = ["",""]
 
     # parsing incidents and users
     pInc,ErrCode[0] = Parser.parse(json_incidents,type = "incident")

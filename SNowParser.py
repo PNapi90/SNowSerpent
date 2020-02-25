@@ -41,26 +41,20 @@ class SNowParser:
             self.__ErrorCodes.setError(tmpErr)
         else:    
             __parse()
-        
-        return 
-        
     
-    def __parseUsers(self):
-
-        
-        
-    def __parseUsers(self):
-        
-        
-        else: 
-            names = [[record['name'],record['sys_id']] for record in self.__results]
-        
-        # if no error occured, 100 is returned
-        
-
         if self.__verbose:
             print("Error Code",errCode,"->",errMeaning)
 
+        return 
+
+    def __parse(self):
+        
+
+        if self.__isIncident:
+            
+        else: 
+            names = [[record['name'],record['sys_id']] for record in self.__results]
+        
         return noError,errCode
 
 

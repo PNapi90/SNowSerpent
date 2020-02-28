@@ -19,9 +19,9 @@ class SNowErrorCodes:
     def __setDictionary(self) -> dict:
         D = {
             '100': 'no error',
-            '101': 'no incidents found',
+            '101': 'no choice records found',
             '102': 'no users found',
-            '103': 'unknown error'
+            '103': 'input field label not found in json'
         }
         return D
 

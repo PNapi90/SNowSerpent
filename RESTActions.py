@@ -9,6 +9,7 @@ def get(url,user = "admin",pwd = "admin"):
     # Do the HTTP request
     response = requests.get(url, auth=(user, pwd), headers=headers )
     # Check for HTTP codes other than 200
+    tmp = 0
     if response.status_code != 200: 
         print('Status:', response.status_code, 'Headers:', response.headers, 'Error Response:',response.json())
         exit()
